@@ -1,0 +1,26 @@
+﻿@model MvcLinkedInApplication.LinkedIn.PeopleSearchResult
+
+@{
+    ViewBag.Title = "Callback";
+}
+
+<h2>Callback</h2>
+
+<div>
+    <h4>PeopleSearchResult</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
